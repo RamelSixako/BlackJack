@@ -1,0 +1,8 @@
+C:\Users\ramra\source\repos\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.SuggestedBindingRedirects.cache
+C:\Users\ramra\source\repos\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.CoreCompileInputs.cache
+C:\Users\ramra\source\repos\BlackJack\BlackJack\bin\Debug\BlackJack.exe.config
+C:\Users\ramra\source\repos\BlackJack\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\ramra\source\repos\BlackJack\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\ramra\source\repos\BlackJack\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\ramra\source\repos\BlackJack\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\ramra\source\repos\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.AssemblyReference.cache

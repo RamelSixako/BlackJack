@@ -109,9 +109,16 @@ namespace BlackJack
                 }
                 if (!player.CheckIsDealer())
                 {
-                    Console.Write("enter 1 to draw and 0 to stop: ");
-                    drawCard = int.Parse(Console.ReadLine());
-                    Console.WriteLine();
+                    try
+                    {
+                        Console.Write("enter 1 to draw and 0 to stop: ");
+                        drawCard = int.Parse(Console.ReadLine());
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Incorrect data type value. skipping users turn");
+                        drawCard = 0;
+                    }
                 }
                 if(drawCard == 1 || player.CheckIsDealer())
                 {

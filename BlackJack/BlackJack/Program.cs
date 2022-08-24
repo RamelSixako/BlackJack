@@ -116,7 +116,7 @@ namespace BlackJack
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine("Incorrect Value. skipping users turn");
+                        Console.WriteLine("Incorrect data type value. skipping user's turn");
                         drawCard = 0;
                     }
                     Console.WriteLine();

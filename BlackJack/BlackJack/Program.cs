@@ -63,7 +63,7 @@ namespace BlackJack
                 if (!player.CheckIsDealer())
                 {
                    
-                    if ((player.GetCurrentScore() == 21) || (player.GetUserCards().Count >= 5 && player.GetCurrentScore() < 21) || (player.GetCurrentScore() < 21 && (dealerScore >= 21 || player.GetCurrentScore() >= dealerScore)))
+                    if ((player.GetCurrentScore() == 21) || (player.GetUserCards().Count >= 5 && player.GetCurrentScore() < 21) || (player.GetCurrentScore() < 21 && (dealerScore > 21 || player.GetCurrentScore() >= dealerScore)))
                     {
                         result = string.Format("Player \'{0}\' beats dealer", player.GetName());
                         dealerWins = false;

@@ -63,7 +63,7 @@ namespace BlackJack
                 if (!player.CheckIsDealer())
                 {
                    
-                    if ((player.GetCurrentScore() == 21) || (player.GetUserCards().Count >= 5 && player.GetCurrentScore() < 21) || (player.GetCurrentScore() < 21 && dealerScore <=21 && player.GetCurrentScore() >= dealerScore))
+                    if ((player.GetCurrentScore() == 21) || (player.GetUserCards().Count >= 5 && player.GetCurrentScore() < 21) || (player.GetCurrentScore() < 21 && (dealerScore >= 21 || player.GetCurrentScore() >= dealerScore)))
                     {
                         result = string.Format("Player \'{0}\' beats dealer", player.GetName());
                         dealerWins = false;
@@ -114,9 +114,9 @@ namespace BlackJack
                         Console.Write("Enter 1 to draw or 0 to stop: ");
                         drawCard = int.Parse(Console.ReadLine());
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
-                        Console.WriteLine("Incorrect data type value. skipping user's turn");
+                        Console.WriteLine("Incorrect Value. skipping users turn");
                         drawCard = 0;
                     }
                     Console.WriteLine();
